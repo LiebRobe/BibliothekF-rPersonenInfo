@@ -4,7 +4,12 @@ using System.Text;
 
 namespace PersonenKurzInfo.Bibliothek
 {
-    class Berechne
+    public static class Berechne
     {
+        public static int GeburtsjahrBerechnen(Person p)
+        {
+            int aktuellesJahr = DateTime.Now.Year;
+            return aktuellesJahr - p.Alter;
+        }
     }
 }
